@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TCSS 491 Assignment 3</title>
+	<script type="text/javascript" src="http://24.16.255.56:8888/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+	 <canvas id="gameWorld" tabindex="1" width="1000" height="1000" style="border: 0.1px solid black; background: white; float:left">
+	 </canvas>
+	 <div id="buttonsDiv" style="float: left">
+	 		<div style="display: block; margin: 5px">Game of Life</div>
+		 	<button id="startButton" value="start" style="display: block; margin: 5px">Start/Pause</button>
+		 	<button id="clearButton" value="clear" style="display: block; margin: 5px" >Clear</button>
+		 	<button id="saveButton" value="save" style="display: block; margin: 5px" >Save</button>
+		 	<button id="loadButton" value="load" style="display: block; margin: 5px" >Load</button>
+		 	<!--<button id="pauseButton" value="pause" style="display: block; margin: 5px">Pause/Resume</button>-->
+		 	<button id="gosperButton" value="gosper" style="display: block; margin: 5px">Gosper Gun</button>
+		 	<button id="randomButton" value="random" style="display: block; margin: 5px">Randomize (BlessRNG)</button>
+		 	<button id="spaceshipButton" value="spaceship" style="display: block; margin: 5px">Spaceships</button>
+		 	<div style="display: block; margin: 5px">
+		 		<button id="cubeButton" value="cube" style="float: left">Cube</button>
+		 		<div style="float: left">Size: </div>
+		 		<input id="cubeInput" type="number" style="float:left" value="40">
+		 		<div>Default cube size is 40 <br> Max cube size is 100 <br> Min cube size is 1 <br> Cube is centered</div>
+		 	</div>
+		 	<div style="display: block; margin: 5px" >Click on cells to make your own <br /> intial condition</div>
+		 	<button id="gpaButton" value="gpa" style="display: block; margin: 5px">( ͡° ͜ʖ ͡°)</button>
+
+	</div>
+	
+</body>
+</html>
